@@ -1,13 +1,18 @@
-# gulp-jsonlint [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][depstat-image]][depstat-url]
+# @prantlf/gulp-jsonlint
+[![NPM version](https://badge.fury.io/js/%40prantlf%2Fgulp-jsonlint.svg)](https://badge.fury.io/js/%40prantlf%2Fgulp-jsonlint)
+[![Build Status](https://travis-ci.com/prantlf/gulp-jsonlint.svg?branch=master)](https://travis-ci.com/prantlf/gulp-jsonlint)
+[![Coverage Status](https://coveralls.io/repos/github/prantlf/gulp-jsonlint/badge.svg?branch=master)](https://coveralls.io/github/prantlf/gulp-jsonlint?branch=master)
+[![Dependency Status](https://david-dm.org/prantlf/gulp-jsonlint.svg)](https://david-dm.org/prantlf/gulp-jsonlint)
+[![devDependency Status](https://david-dm.org/prantlf/gulp-jsonlint/dev-status.svg)](https://david-dm.org/prantlf/gulp-jsonlint#info=devDependencies)
 
 > [JSON]/[JSON5] file syntax validation plugin for [`gulp`] using [`jsonlint`]
 
 ## Usage
 
-First, install `gulp-jsonlint` as a development dependency:
+First, install `@prantlf/gulp-jsonlint` as a development dependency:
 
 ```shell
-npm install --save-dev gulp-jsonlint
+npm i -D @prantlf/gulp-jsonlint
 ```
 
 Then, add it to your `gulpfile.js`:
@@ -89,16 +94,9 @@ Stop a task/stream if an jsonlint error has been reported for any file, but wait
 
 ## License
 
-[MIT License]
+Copyright (C) 2013-2019 Rogério Vicente, Ferdinand Prantl
 
-[npm-url]: https://npmjs.org/package/gulp-jsonlint
-[npm-image]: https://badge.fury.io/js/gulp-jsonlint.svg
-
-[travis-url]: http://travis-ci.org/rogeriopvl/gulp-jsonlint
-[travis-image]: https://secure.travis-ci.org/rogeriopvl/gulp-jsonlint.svg?branch=master
-
-[depstat-url]: https://david-dm.org/rogeriopvl/gulp-jsonlint
-[depstat-image]: https://david-dm.org/rogeriopvl/gulp-jsonlint.svg
+Licensed under the [MIT License].
 
 [MIT License]: http://en.wikipedia.org/wiki/MIT_License
 [`gulp`]: http://gulpjs.com/

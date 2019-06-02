@@ -1,8 +1,13 @@
+.nyc_output/
+.coveralls.yml
 .editorconfig
 .gitignore
 .jshintrc
 .npmignore
+.nycrc.yml
 .travis.yml
+.vscode/
+coverage/
 node_modules/
 npm-debug.log
 test/
