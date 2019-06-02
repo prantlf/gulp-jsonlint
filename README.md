@@ -7,6 +7,14 @@
 
 > [JSON]/[JSON5] file syntax validation plugin for [`gulp`] using [`jsonlint`]
 
+This is a fork of the original package with the following enhancements:
+
+* Validates with both [JSON] and [JSON5] standards.
+* Optionally recognizes JavaScript-style comments and single quoted strings.
+* Optionally ignores trailing commas and reports duplicate object keys as an error.
+* Prefers using the 8x faster native JSON parser, if possible.
+* Depends on up-to-date npm modules with no installation warnings.
+
 ## Usage
 
 First, install `@prantlf/gulp-jsonlint` as a development dependency:
