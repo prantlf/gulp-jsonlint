@@ -5,7 +5,7 @@
 [![Dependency Status](https://david-dm.org/prantlf/gulp-jsonlint.svg)](https://david-dm.org/prantlf/gulp-jsonlint)
 [![devDependency Status](https://david-dm.org/prantlf/gulp-jsonlint/dev-status.svg)](https://david-dm.org/prantlf/gulp-jsonlint#info=devDependencies)
 
-> [JSON]/[JSON5] file syntax validation plugin for [`gulp`] using [`jsonlint`]
+> [JSON]/[JSON5] file syntax validation plugin for [`Gulp`] using [`JSONLint`]
 
 This is a fork of the original package with the following enhancements:
 
@@ -13,8 +13,9 @@ This is a fork of the original package with the following enhancements:
 * Supports [JSON Schema] drafts 04, 06 and 07.
 * Optionally recognizes JavaScript-style comments and single quoted strings.
 * Optionally ignores trailing commas and reports duplicate object keys as an error.
-* Prefers using the 8x faster native JSON parser, if possible.
+* Prefers using the 7x faster native JSON parser, if possible.
 * Optionally reformats the output JSON and sorts object keys alphabetically.
+* Offers alternative error location formatters and message reporters.
 * Depends on up-to-date npm modules with no installation warnings.
 
 ## Usage
@@ -254,8 +255,8 @@ Copyright (C) 2013-2019 Rogério Vicente, Ferdinand Prantl
 Licensed under the [MIT License].
 
 [MIT License]: http://en.wikipedia.org/wiki/MIT_License
-[`gulp`]: http://gulpjs.com/
-[`jsonlint`]: https://prantlf.github.io/jsonlint/
+[`Gulp`]: http://gulpjs.com/
+[`JSONLint`]: https://prantlf.github.io/jsonlint/
 [JSON]: https://tools.ietf.org/html/rfc8259
 [JSON5]: https://spec.json5.org
 [JSON Schema]: https://json-schema.org
