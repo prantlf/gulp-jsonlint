@@ -29,7 +29,7 @@ npm i -D @prantlf/gulp-jsonlint
 Then, add it to your `gulpfile.js`:
 
 ```javascript
-var jsonlint = require("gulp-jsonlint");
+var jsonlint = require("@prantlf/gulp-jsonlint");
 
 gulp.src("./src/*.json")
     .pipe(jsonlint())
@@ -39,7 +39,7 @@ gulp.src("./src/*.json")
 Using a custom reporter:
 
 ```javascript
-var jsonlint = require('gulp-jsonlint');
+var jsonlint = require('@prantlf/gulp-jsonlint');
 var log = require('fancy-log');
 
 var myCustomReporter = function (file) {
@@ -54,7 +54,7 @@ gulp.src('./src/*.json')
 Using an alternative error location *formatter* and error message *reporter*:
 
 ```javascript
-var jsonlint = require('gulp-jsonlint');
+var jsonlint = require('@prantlf/gulp-jsonlint');
 
 gulp.src('./src/*.json')
     .pipe(jsonlint({
