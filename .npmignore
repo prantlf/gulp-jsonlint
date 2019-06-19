@@ -1,8 +1,8 @@
 .nyc_output/
 .coveralls.yml
 .editorconfig
+.eslintrc
 .gitignore
-.jshintrc
 .npmignore
 .nycrc.yml
 .travis.yml

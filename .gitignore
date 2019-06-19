@@ -3,4 +3,4 @@
 coverage/
 node_modules/
 temp/
-gulpfile.js
+npm-debug.log
