@@ -6,9 +6,9 @@ cache:
 notifications:
   email: false
 node_js:
+  - "12"
   - "10"
   - "8"
-  - "6"
 after_success:
   - test `node --version | cut -c 2,3` -eq 10 && npm run coverage
   - npx semantic-release
