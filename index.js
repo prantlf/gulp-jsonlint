@@ -68,8 +68,9 @@ var jsonLintPlugin = function(options) {
   function validateSchema(data, file, finish) {
     var lastError
     try {
-      var validate = validator.compile(schemaContent, parserOptions)
-      var parsedData = validate(data, parserOptions)
+      var tempOptions = {...parserOptions }
+      var validate = validator.compile(schemaContent, tempOptions)
+      var parsedData = validate(data, tempOptions)
       formatOutput(parsedData, file)
     } catch (error) {
       lastError = error
