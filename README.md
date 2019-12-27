@@ -13,6 +13,8 @@ This is a fork of the original package with the following enhancements:
 * Supports [JSON Schema] drafts 04, 06 and 07.
 * Optionally recognizes JavaScript-style comments and single quoted strings.
 * Optionally ignores trailing commas and reports duplicate object keys as an error.
+* Can sort object keys alphabetically.
+* Offers pretty-printing including comment-stripping and object keys without quotes (JSON5).
 * Prefers using the 7x faster native JSON parser, if possible.
 * Optionally reformats the output JSON and sorts object keys alphabetically.
 * Offers alternative error location formatters and message reporters.
