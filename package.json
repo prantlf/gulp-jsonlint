@@ -44,22 +44,22 @@
   "dependencies": {
     "ansi-colors": "4.1.1",
     "fancy-log": "1.3.3",
-    "@prantlf/jsonlint": "8.0.2",
+    "@prantlf/jsonlint": "10.0.0",
     "map-stream": "0.0.7",
     "plugin-error": "1.0.1",
     "through2": "3.0.1"
   },
   "devDependencies": {
-    "eslint": "6.0.1",
-    "eslint-config-standard": "12.0.0",
-    "eslint-plugin-import": "2.18.0",
-    "eslint-plugin-node": "9.1.0",
+    "eslint": "6.8.0",
+    "eslint-config-standard": "14.1.0",
+    "eslint-plugin-import": "2.19.1",
+    "eslint-plugin-node": "11.0.0",
     "eslint-plugin-promise": "4.2.1",
-    "eslint-plugin-standard": "4.0.0",
+    "eslint-plugin-standard": "4.0.1",
     "gulp": "4.0.2",
-    "mocha": "6.1.4",
-    "nyc": "14.1.1",
-    "prettier": "1.18.2",
+    "mocha": "6.2.2",
+    "nyc": "15.0.0",
+    "prettier": "1.19.1",
     "should": "13.2.3",
     "vinyl": "2.2.0"
   }
