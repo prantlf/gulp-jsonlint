@@ -6,6 +6,7 @@ var colors = require('ansi-colors')
 var jsonlint = require('@prantlf/jsonlint')
 var validator = require('@prantlf/jsonlint/lib/validator')
 var sorter = require('@prantlf/jsonlint/lib/sorter')
+var printer = require('@prantlf/jsonlint/lib/printer')
 var through = require('through2')
 var PluginError = require('plugin-error')
 var log = require('fancy-log')
@@ -20,8 +21,11 @@ var jsonLintPlugin = function(options) {
       allowDuplicateObjectKeys: true,
       schema: {},
       format: false,
+      prettyPrint: false,
       indent: 2,
-      sortKeys: false
+      sortKeys: false,
+      pruneComments: false,
+      stripObjectKeys: false
     },
     options
   )
@@ -55,12 +59,24 @@ var jsonLintPlugin = function(options) {
     return result
   }
 
-  function formatOutput(parsedData, file) {
+  function formatOutput(data, parsedData, file) {
+    var formatted
     if (options.format) {
       if (options.sortKeys) {
         parsedData = sorter.sortObject(parsedData)
       }
-      var formatted = JSON.stringify(parsedData, null, options.indent) + '\n'
+      formatted = JSON.stringify(parsedData, null, options.indent) + '\n'
+    } else if (options.prettyPrint) {
+      parserOptions.rawTokens = true
+      var tokens = jsonlint.tokenize(data, parserOptions)
+      // TODO: Support sorting tor the tokenized input too.
+      formatted = printer.print(tokens, {
+        indent: new Array(options.indent + 1).join(' '),
+        pruneComments: options.pruneComments,
+        stripObjectKeys: options.stripObjectKeys
+      }) + '\n'
+    }
+    if (formatted) {
       file.contents = Buffer.from(formatted)
     }
   }
@@ -70,7 +86,7 @@ var jsonLintPlugin = function(options) {
     try {
       var validate = validator.compile(schemaContent, parserOptions)
       var parsedData = validate(data, parserOptions)
-      formatOutput(parsedData, file)
+      formatOutput(data, parsedData, file)
     } catch (error) {
       lastError = error
     }
@@ -108,7 +124,7 @@ var jsonLintPlugin = function(options) {
         return
       }
       var parsedData = jsonlint.parse(data, parserOptions)
-      formatOutput(parsedData, file)
+      formatOutput(data, parsedData, file)
     } catch (error) {
       lastError = error
     }

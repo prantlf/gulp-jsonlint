@@ -79,8 +79,11 @@ Options can be passed as keys in an object to the `jsonlint` function. The follo
         allowDuplicateObjectKeys: true,
         // formatting
         format: false,
+        prettyPrint: false,
         indent: 2,
-        sortKeys: false
+        sortKeys: false,
+        pruneComments: false,
+        stripObjectKeys: false
     })
 
 * `mode`, when set to "cjson" or "json5", enables some other flags automatically
@@ -90,8 +93,11 @@ Options can be passed as keys in an object to the `jsonlint` function. The follo
 * `allowDuplicateObjectKeys`, when `false` duplicate keys in objects will be reported as an error
 
 * `format`, when `true` `JSON.stringify` will be used to format the JavaScript (if it is valid)
+* `prettyPrint`, when `true` `JSON.stringify` will be used to format the JavaScript (if it is valid)
 * `indent`, the value passed to `JSON.stringify`, it can be the number of spaces, or string like "\t"
-* `sortKeys`, when `true` keys of objects in the output JSON will be sorted alphabetically (`format` has to be set to `true` too)
+* `sortKeys`, when `true` keys of objects in the output JSON will be sorted alphabetically (`format` has to be set to `true`)
+* `pruneComments`, when `true` comments will be omitted from the prettified output (CJSON feature, `prettyPrint` has to be set to `true`)
+* `stripObjectKeys`, when `true` quotes surrounding object keys will be stripped if the key is a JavaScript identifier name (JSON5 feature, `prettyPrint` has to be set to `true`)
 
 #### Schema Validation
 

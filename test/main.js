@@ -237,6 +237,18 @@ describe('gulp-jsonlint', function() {
     )
   })
 
+  it('can prettify the output', function(done) {
+    formatValidFile(
+      'fixtures/json5.json',
+      done,
+      {
+        mode: 'json5',
+        prettyPrint: true
+      },
+      '{\n  // String parameter\n  "key": \'value\',\n  \n}'
+    )
+  })
+
   it('can sort object keys in the output', function(done) {
     formatValidFile(
       'fixtures/comments.json',
