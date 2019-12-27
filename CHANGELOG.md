@@ -1,4 +1,4 @@
-## [2.2.2](https://github.com/prantlf/gulp-jsonlint/compare/v2.2.1...v2.2.2) (2019-12-27)
+## [2.3.0](https://github.com/prantlf/gulp-jsonlint/compare/v2.2.1...v2.3.0) (2019-12-27)
 
 ### Bug Fixes
 
