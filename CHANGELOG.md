@@ -1,3 +1,9 @@
+# [2.3.1](https://github.com/prantlf/gulp-jsonlint/compare/v2.3.0...v2.3.1) (2019-12-27)
+
+### Bug Fixes
+
+* Upgrade @prantlf/jsonlint to support number of spaces as the indent option ([caff1ce](https://github.com/prantlf/gulp-jsonlint/commit/caff1ce0807dda1b3f1fd0a596639ebc8d796429))
+
 ## [2.3.0](https://github.com/prantlf/gulp-jsonlint/compare/v2.2.1...v2.3.0) (2019-12-27)
 
 ### Bug Fixes
