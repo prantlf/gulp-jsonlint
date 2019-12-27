@@ -1,7 +1,7 @@
 # @prantlf/gulp-jsonlint
 [![NPM version](https://badge.fury.io/js/%40prantlf%2Fgulp-jsonlint.svg)](https://badge.fury.io/js/%40prantlf%2Fgulp-jsonlint)
 [![Build Status](https://travis-ci.com/prantlf/gulp-jsonlint.svg?branch=master)](https://travis-ci.com/prantlf/gulp-jsonlint)
-[![Coverage Status](https://coveralls.io/repos/github/prantlf/gulp-jsonlint/badge.svg?branch=master)](https://coveralls.io/github/prantlf/gulp-jsonlint?branch=master)
+[![codecov](https://codecov.io/gh/prantlf/gulp-jsonlint/branch/master/graph/badge.svg)](https://codecov.io/gh/prantlf/gulp-jsonlint)
 [![Dependency Status](https://david-dm.org/prantlf/gulp-jsonlint.svg)](https://david-dm.org/prantlf/gulp-jsonlint)
 [![devDependency Status](https://david-dm.org/prantlf/gulp-jsonlint/dev-status.svg)](https://david-dm.org/prantlf/gulp-jsonlint#info=devDependencies)
 
