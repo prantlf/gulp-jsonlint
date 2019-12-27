@@ -33,7 +33,6 @@
     "posttest": "nyc --silent --no-clean npm run examples || nyc report",
     "lint": "eslint **/*.js",
     "lint:fix": "prettier --write index.js lib/**/*.js test/**/*.js",
-    "coverage": "cat coverage/lcov.info | npx coveralls",
     "examples": "gulp valid && gulp one || gulp two || gulp three || gulp all"
   },
   "keywords": [
