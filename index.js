@@ -71,7 +71,7 @@ var jsonLintPlugin = function(options) {
       var tokens = jsonlint.tokenize(data, parserOptions)
       // TODO: Support sorting tor the tokenized input too.
       formatted = printer.print(tokens, {
-        indent: new Array(options.indent + 1).join(' '),
+        indent: options.indent,
         pruneComments: options.pruneComments,
         stripObjectKeys: options.stripObjectKeys
       }) + '\n'
