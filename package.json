@@ -4,7 +4,8 @@
   "description": "A jsonlint plugin for Gulp",
   "author": "Ferdinand Prantl <prantlf@gmail.com> (http://prantl.tk)",
   "contributors": [
-    "Rogério Vicente (https://github.com/rogeriopvl)"
+    "Rogério Vicente (https://github.com/rogeriopvl)",
+    "mrflippy (https://github.com/misterflippy)"
   ],
   "license": "MIT",
   "licenses": [
