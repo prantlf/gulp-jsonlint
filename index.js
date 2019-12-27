@@ -95,7 +95,7 @@ var jsonLintPlugin = function(options) {
 
   function loadAndValidateSchema(data, file, finish) {
     if (schemaContent) {
-      validateSchema(data, finish)
+      validateSchema(data, file, finish)
     } else {
       fs.readFile(schema.src, 'utf-8', function(error, fileContent) {
         if (error) {
