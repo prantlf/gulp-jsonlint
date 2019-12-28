@@ -25,7 +25,10 @@ var jsonLintPlugin = function(options) {
       indent: 2,
       sortKeys: false,
       pruneComments: false,
-      stripObjectKeys: false
+      stripObjectKeys: false,
+      enforceDoubleQuotes: false,
+      enforceSingleQuotes: false,
+      trimTrailingCommas: false
     },
     options
   )
@@ -73,7 +76,10 @@ var jsonLintPlugin = function(options) {
       formatted = printer.print(tokens, {
         indent: options.indent,
         pruneComments: options.pruneComments,
-        stripObjectKeys: options.stripObjectKeys
+        stripObjectKeys: options.stripObjectKeys,
+        enforceDoubleQuotes: options.enforceDoubleQuotes,
+        enforceSingleQuotes: options.enforceSingleQuotes,
+        trimTrailingCommas: options.trimTrailingCommas
       }) + '\n'
     }
     if (formatted) {
