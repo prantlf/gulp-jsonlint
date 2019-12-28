@@ -1,3 +1,9 @@
+# [2.4.0](https://github.com/prantlf/gulp-jsonlint/compare/v2.3.2...v2.4.0) (2019-12-28)
+
+### Features
+
+* Add support for quiote unification and trailing comma trimming (JSON5) ([6f14760](https://github.com/prantlf/gulp-jsonlint/commit/6f1476099131fe833390b12ec49bcd0071fbbf41))
+
 # [2.3.2](https://github.com/prantlf/gulp-jsonlint/compare/v2.3.1...v2.3.2) (2019-12-27)
 
 ### Bug Fixes
